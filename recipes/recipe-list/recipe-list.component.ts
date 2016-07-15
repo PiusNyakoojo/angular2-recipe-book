@@ -9,9 +9,11 @@ import { RecipeItemComponent } from "./recipe-item.component";
   directives: [RecipeItemComponent]
 })
 export class RecipeListComponent implements OnInit {
-  recipes: Recipe[] = [];
+  recipes: Recipe[] = [
+    new Recipe('Schnitzel', 'Very tasty', 'http://www.duden.de/_media_/full/S/Schnitzel-201020474666.jpg', []),
+    new Recipe('Summer Salad', 'Delicious', 'http://cdn.pinchofyum.com/wp-content/uploads/Green-Goddess-Quinoa-Summer-Salad.jpg', [])
+  ];
   @Output() recipeSelected = new EventEmitter<Recipe>();
-  recipe: Recipe = new Recipe('Dummy', 'Dummy', 'https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150');
 
   constructor() {}
 

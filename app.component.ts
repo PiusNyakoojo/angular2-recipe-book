@@ -11,5 +11,5 @@ import { ShoppingListComponent } from './shopping-list';
 })
 
 export class AppComponent {
-
+  
 }

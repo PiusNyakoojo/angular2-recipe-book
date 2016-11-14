@@ -12,7 +12,8 @@ import { DropdownDirective } from './dropdown.directive';
 export class HeaderComponent implements OnInit {
 
   constructor() {}
-
+  
+  // Hook into init lifecyle hook
   ngOnInit() {
   }
 
